@@ -1,0 +1,21 @@
+<!-- Loop over each object in the topics array -->
+{{#each topics as |topic| }}
+<div class="row mb-4 topic">
+  <div class="col-md-5">
+    <h2>
+      <!-- Call helper function with triple brackets to render the emoji span as HTML -->
+      {{{get_emoji}}}
+      <a href="/topic/{{topic.id}}">{{topic.name}}</a>
+    </h2>
+    <p>
+    </p>
+    <p>Created on {{format_date topic.date_created}}</p>
+    <p>____________________________________________________________________</p>
+  </div>
+  <div class="col-md-7">
+    <p>
+      <b> By: {{topic.user.username}}</b>
+    </p>
+  </div>
+</div>
+{{/each}}
