@@ -14,6 +14,10 @@
 
 This is a simple tech blog where users can create/login to a profile as well as create and delete topics.
 
+## Future Development
+
+Allow for users to post comments on topics.
+
 ## App
 
 - App Demo: [Click here](https://tight-tech-blog.herokuapp.com/)
